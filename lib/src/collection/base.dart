@@ -90,8 +90,8 @@ class BaseGeoFireCollectionRef<T> {
     required String field,
     required GeoPoint? Function(T t) geopointFrom,
     required bool? strictMode,
-  }) {
-    return protectedWithin(
+  }) async {
+    return await protectedWithin(
       center: center,
       field: field,
       geopointFrom: geopointFrom,
@@ -107,8 +107,8 @@ class BaseGeoFireCollectionRef<T> {
     required String field,
     required GeoPoint? Function(T t) geopointFrom,
     required bool? strictMode,
-  }) {
-    return protectedWithinWithDistance(
+  }) async {
+    return await protectedWithinWithDistance(
       center: center,
       field: field,
       geopointFrom: geopointFrom,
