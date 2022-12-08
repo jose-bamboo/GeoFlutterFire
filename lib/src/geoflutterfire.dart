@@ -4,8 +4,8 @@ import 'package:geoflutterfire/src/collection/with_converter.dart';
 import 'collection/default.dart';
 import 'models/point.dart';
 
-class Geoflutterfire {
-  Geoflutterfire();
+class GeoFlutterFire {
+  GeoFlutterFire();
 
   GeoFireCollectionRef collection({
     required Query<Map<String, dynamic>> collectionRef,
